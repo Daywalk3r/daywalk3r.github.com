@@ -11,11 +11,67 @@
 
 .pretty-type {
 	-webkit-font-smoothing: antialiased;
+	font-family: inherit;
+	font-size: inherit;
 	text-rendering: optimizeLegibility;
+}
+
+/* General Classes
+-------------------*/
+.btn {
+	.rounded(5px);
+	.epsilon;
+
+	border: 2px solid #504b55;
+	background: transparent;
+	color: #68626f;
+	font-weight: 600;
+	letter-spacing: 2px;
+	min-width: 200px;
+	padding: 10px 20px;
+	text-transform: uppercase;
+
+	&:hover {
+		background-color: #4e8a5d;
+		border-color: #4e8a5d;
+		color: white;
+	}
+}
+
+.highlight {
+	font-weight: 600;
 }
 
 /* Everything Else
 -------------------*/
+h1, h2, h3, h4, h5, h6 {
+	color: white;
+}
+
+a {
+	color: #77c38a;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+button, input {
+	.pretty-type;
+}
+
+button,
+input[type="submit"],
+.item {
+	cursor: pointer;
+}
+
 body {
 	.pretty-type;
+
+	background-color: #2b282f;
+	color: white;
+}
+
+.wrap {
+	margin: 0 auto;
+	text-align: center;
 }
