@@ -17,5 +17,5 @@ var contact = {
 };
 
 $(document).ready(function() {
-	$('#get-in-touch').on('click', contact.showForm);
+	//$('#get-in-touch').on('click', contact.showForm);
 });
