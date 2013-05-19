@@ -38,8 +38,22 @@
 	}
 }
 
+input[type="submit"] {
+	.btn;
+}
+
 .highlight {
 	font-weight: 600;
+}
+
+.separator {
+	color: #46434a;
+	display: block;
+	font-size: 2em;
+	font-size: 2rem;
+	font-weight: 100;
+	margin: 20px 0;
+	text-align: center;
 }
 
 /* Everything Else
@@ -54,14 +68,21 @@ a {
 	text-decoration: none;
 }
 
-button, input {
+button, input, textarea {
 	.pretty-type;
+	.box-sizing(border-box);
+
+	outline: none;
 }
 
 button,
 input[type="submit"],
 .item {
 	cursor: pointer;
+}
+
+textarea {
+	resize: none;
 }
 
 body {
@@ -74,4 +95,65 @@ body {
 .wrap {
 	margin: 0 auto;
 	text-align: center;
+}
+
+// Contact Form
+#contact {
+	background-color: #4e8a5d;
+	display: none;
+	margin: 0 auto;
+	position: absolute;
+
+	form {
+		color: white;
+		margin: 0 auto;
+
+		input,
+		textarea {
+			.placeholder(white);
+
+			background: transparent;
+			border: none;
+			color: white;
+			display: block;
+			font-weight: 100;
+			width: 100%;
+		}
+
+		input {
+			.gamma;
+
+			margin: 0 0 10px 0;
+			//text-align: center;
+
+			&[name="name"] {
+				font-weight: 600;
+			}
+
+			&[type="email"] {
+				.delta;
+
+				color: #abe2b9;
+			}
+		}
+
+		textarea {
+			.epsilon;
+
+			//text-align: center;
+		}
+
+		input[type="submit"] {
+			.delta;
+
+			border: 2px solid white;
+			color: white;
+			font-weight: 600;
+			margin: 0 auto;
+		}
+
+		.separator {
+			color: white;
+		}
+	}
 }
