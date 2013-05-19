@@ -19,19 +19,34 @@
 </head>
 <body>
 	<div class="wrap">
+
 		<header>
 			<h1><span class="highlight">Christian Georg</span> is a web designer and developer.</h1>
 			<p class="blurb">
-				You can find him on <a href="">Dribbble</a>,<a href="">Twitter</a>, <a href="">Linked In</a>, and somewhere in the hills of Virginia.
+				You can find him on <a href="">Dribbble</a>, <a href="">Twitter</a>, <a href="">Linked In</a>, and somewhere in the hills of Virginia.
 			</p>
 		</header>
+
 		<ul class="work">
 			<li class="item" data-item="comrade"></li>
 			<li class="item" data-item="crm"></li>
 			<li class="item" data-item="news"></li>
 		</ul>
-		<span class="separator"></span>
+
+		<span class="separator">&times;</span>
 		<button id="get-in-touch" class="btn"><span class="icon"></span>Get in Touch</button>
 	</div>
+
+	<!-- Contact Form -->
+	<div id="contact" class="modal">
+		<form method="post">
+			<input type="text" placeholder="Full Name" name="name" />
+			<input type="email" placeholder="Email" name="email" />
+			<!-- <span class="separator">&times;</span> -->
+			<textarea placeholder="Your inquiry..." rows="5"></textarea>
+			<input type="submit" value="Send" />
+		</form>
+	</div>
+
 </body>
 </html>

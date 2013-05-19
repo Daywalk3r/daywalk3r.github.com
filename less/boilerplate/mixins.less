@@ -154,3 +154,21 @@
   -webkit-background-clip: @argument;
   background-clip: @argument;
 }
+
+.placeholder(@color: @placeholderText) {
+  ::-webkit-input-placeholder {
+    color: @color;
+  }
+
+  ::-moz-placeholder {
+    color: @color;
+  }
+
+  :-moz-placeholder {
+    color: @color;
+  }
+
+  :-ms-input-placeholder {
+    color: @color;
+  }
+}
