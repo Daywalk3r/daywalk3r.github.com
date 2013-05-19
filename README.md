@@ -24,6 +24,7 @@ Updating the codebase.
 When making changes to the repo, think of the work you're putting into it like small projects. For example, if you are focused on writing the markup for navigation, once you're finished
 
 If you've added or removed a file to the repo run `git add .` *This stages all untracked files*
+
 Commit your changes by running `git commit -am "your message"`
 
 Finally, when you're ready to push remotely
