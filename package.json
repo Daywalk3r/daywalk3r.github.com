@@ -1,0 +1,10 @@
+{
+	"name": "Portfolio",
+	"description": "portfolio",
+	"version": "0.0.1",
+	"private": true,
+	"dependencies": {
+		"connect": "2.7.2",
+		"nodemon": "0.7.6"
+	}
+}
