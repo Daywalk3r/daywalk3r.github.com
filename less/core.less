@@ -1,0 +1,21 @@
+// All rules that can be used regardless of resolution
+
+/* Useful classes
+-------------------*/
+// Self Clear
+.self-clear:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.pretty-type {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+/* Everything Else
+-------------------*/
+body {
+	.pretty-type;
+}
