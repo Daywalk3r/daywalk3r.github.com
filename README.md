@@ -21,7 +21,7 @@ This will spawn a web server that listens at `http://localhost:3000`
 Updating the codebase.
 ---------------------
 
-When making changes to the repo, think of the work you're putting into it like small projects. For example, if you are focused on writing the markup for navigation, once you're finished
+When making changes to the repo, think of the work you're putting into it like small projects. For example, if you are focused on writing the markup for navigation, once you're finished do the following:
 
 If you've added or removed a file to the repo run `git add .` *This stages all untracked files*
 
