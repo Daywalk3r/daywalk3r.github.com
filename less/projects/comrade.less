@@ -19,6 +19,7 @@ body{
 .content-wrap{
 	margin:0 auto;
 	max-width:1250px;
+	min-width:655px;
 }
 .content{
 	padding-top:20px;
@@ -61,12 +62,15 @@ h1{
 }
 
 .profile-pic, .profile-pic-mini{
+	position:inline-block;
+
 	border-radius:200px;
+	margin-right:10px;
 	
 }
 .message-content{
-	float:right;
-	width:80%;
+	display:inline-block;
+	max-width:250px;
 	
 }
 .author{
@@ -102,9 +106,8 @@ h1{
 	padding:70px 0px 0px 20px;
 }
 .selected-content{
-
-	float:right;
-	width:93%;
+	display:inline-block;
+	max-width:750px;
 	
 }
 .selected-subject{
@@ -134,18 +137,32 @@ h1{
 .selected-text p:first-child{
 	margin-bottom: 30px;
 }
-.earlier-list li:first-child{
+
+.earlier-list .earlier{
+	
+	width:100%;
+	padding:20px 30px;
 	border-bottom:solid 1px #B2B2B2;
+	overflow:hidden;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
 }
-.earlier-summary{
-	width:93%;
-	float:right;
+
+.earlier .earlier-summary{
+	display:inline-block;
+	max-width:750px;
+
 }
+.earlier-list li:last-child{
+	border-bottom:none;
+}
+
 .earlier-summary .author{
 	display:inline;
 }
 
-li :hover{
+li:hover{
 	cursor:pointer;
 }
 .yesterday-list li{
