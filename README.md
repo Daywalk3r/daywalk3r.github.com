@@ -7,9 +7,19 @@ Start up your shell
 
 run `cd /the/path/to/repo`
 
+run `git checkout master`
+
 run `git pull origin master`
 
 *This pulls all changes from the remote repository and then applies them to your local copy -- this way you're always working with an up-to-date codebase.*
+
+run `git checkout [the branch you want to work on]`
+
+*Probably the `frontend` branch in this case.*
+
+run `git rebase master`
+
+*This will fast-forward the branch you have checked out to your local master branch. Essentially, keeping your active branch up-to-date with the local `master`. It also applies any changes you've made to the active branch in addition to fast-forwarding it.*
 
 run `node server.js`
 
